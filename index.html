@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+  <head>
+    <title>División de gastos</title>
+  </head>
+    <body>
+      <div id="global">
+      <h1>División de Gastos</h1>
+      <div id="container">
+        <span class="titles">Nombre</span>
+        <span class="titles">Monto</span>
+      </div>
+      <div id="form">
+        <form action="/action.php" method="post">
+          <input id="inputName" name="name" type="text" /> 
+          <input id="input" min="0" name="monto" type="number" value="0" />
+        </form>
+      </div>
+      <script>
+        const nombres = [];
+        const montos = [];
+      </script>
+      <div>
+        <button class="button" onclick="cargaDeDatos();">Agregar</button>
+        <button class="button" onclick="calcular();">Calcular</button>
+        <button class="button" onclick="borrar();">Borrar</button>
+        <!--<div id="resultado"></div>-->
+      </div>
+      <div id="results">
+        <span id="name"></span>
+        <span id="amount"></span>
+      </div>
+    </div>
+  </body>
+</html>
